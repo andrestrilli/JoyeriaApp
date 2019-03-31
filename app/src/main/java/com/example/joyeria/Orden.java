@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class Orden extends AppCompatActivity {
 
+    private int Id;
     private Material MaterialBase;
     private Material Piedra;
     private String TipoPrenda;
@@ -15,6 +16,7 @@ public class Orden extends AppCompatActivity {
         Piedra = piedra;
         Marcada = marcada;
         TipoPrenda = tipoPrenda;
+        Id=Data.getOrdenes().size()+1;
         //tipo prenda  P = pulsera  C=Cadena
         if (tipoPrenda== "P"){
             PrecioTotal = materialBase.getPrecioPulsera()+piedra.getPrecioPulsera();
@@ -22,6 +24,15 @@ public class Orden extends AppCompatActivity {
             PrecioTotal= materialBase.getPrecioCadena()+piedra.getPrecioCadena();
         }
 
+
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public Material getMaterialBase() {
@@ -68,5 +79,24 @@ public class Orden extends AppCompatActivity {
     public String toString() {
         return MaterialBase + " " + Piedra;
     }
+
+    public void calcularTotal(){
+        if (TipoPrenda== "P"){
+            PrecioTotal = MaterialBase.getPrecioPulsera()+Piedra.getPrecioPulsera();
+        }else{
+            PrecioTotal= MaterialBase.getPrecioCadena()+Piedra.getPrecioCadena();
+        }
+    }
+
+    public void Add(){
+        Data.addOrden(this);
+    }
+    public void Remove(){
+        Data.removeOrden(this);
+    }
+    public void Edit(){
+
+    }
+
 
 }
