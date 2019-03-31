@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Joyeria</string>
+    <string name="am_titulo_joyeria">Jewelry A.P S.A.S</string>
+    <string name="cj_create_jewelry">Create Jewelry</string>
+    <string name="cj_choose_material">Choose A Material</string>
+    <string name="cj_choose_stong">Choose A Stong</string>
+    <string name="cj_mark_jewel">Mark Jewel</string>
+    <string name="cj_order">Order</string>
 </resources>
