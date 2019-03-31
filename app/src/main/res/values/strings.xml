@@ -23,17 +23,28 @@
     <string name="cj_material_Emerald">Emerald</string>
     <string name="cj_material_Quarzo">Quarzo</string>
 
+    <string-array name="Menu">
+        <item>@string/cj_create_jewelry</item>
+        <item>@string/am_see_orders</item>
+    </string-array>
 
     <string-array name="type_jw">
         <item>@string/cj_type_item1</item>
         <item>@string/cj_type_item2</item>
     </string-array>
 
-
-
-
-    <string-array name="Menu">
-        <item>@string/cj_create_jewelry</item>
-        <item>@string/am_see_orders</item>
+    <string-array name="material_jw">
+        <item>@string/cj_material_Silver</item>
+        <item>@string/cj_material_Steel</item>
+        <item>@string/cj_material_Gold</item>
     </string-array>
+
+    <string-array name="piedra_jw">
+        <item>@string/cj_material_Ruby</item>
+        <item>@string/cj_material_Emerald</item>
+        <item>@string/cj_material_Quarzo</item>
+    </string-array>
+
+
+    
 </resources>
