@@ -1,9 +1,25 @@
 <resources>
     <string name="app_name">Joyeria</string>
     <string name="am_titulo_joyeria">Jewelry A.P S.A.S</string>
+    <string name="am_see_orders">See Orders</string>
+
     <string name="cj_create_jewelry">Create Jewelry</string>
     <string name="cj_choose_material">Choose A Material</string>
-    <string name="cj_choose_stong">Choose A Stong</string>
+    <string name="cj_choose_stone">Choose A Stone</string>
     <string name="cj_mark_jewel">Mark Jewel</string>
     <string name="cj_order">Order</string>
+
+    <!--Item Create Jewel-->
+    <string name="cj_type_item1">Bracelet</string>
+    <string name="cj_type_item2">Chain</string>
+
+    <string-array name="type_jw">
+        <item>@string/cj_type_item1</item>
+        <item>@string/cj_type_item2</item>
+    </string-array>
+
+    <string-array name="Menu">
+        <item>@string/cj_create_jewelry</item>
+        <item>@string/am_see_orders</item>
+    </string-array>
 </resources>
