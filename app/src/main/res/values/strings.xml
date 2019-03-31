@@ -13,10 +13,24 @@
     <string name="cj_type_item1">Bracelet</string>
     <string name="cj_type_item2">Chain</string>
 
+    <!--Item Material Jewel-->
+    <string name="cj_material_Silver">Silver</string>
+    <string name="cj_material_Steel">Steel</string>
+    <string name="cj_material_Gold">Gold</string>
+
+    <!--Item Stone Jewel-->
+    <string name="cj_material_Ruby">Ruby</string>
+    <string name="cj_material_Emerald">Emerald</string>
+    <string name="cj_material_Quarzo">Quarzo</string>
+
+
     <string-array name="type_jw">
         <item>@string/cj_type_item1</item>
         <item>@string/cj_type_item2</item>
     </string-array>
+
+
+
 
     <string-array name="Menu">
         <item>@string/cj_create_jewelry</item>
