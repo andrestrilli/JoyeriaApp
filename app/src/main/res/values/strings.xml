@@ -12,6 +12,11 @@
 
     <string name="done">Added Successfully</string>
 
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="alert_conf_remove">Do you want to remove the order?</string>
+    <string name="Deleted">Removed Succesfully</string>
+
     <!--Item Create Jewel-->
     <string name="cj_type_item1">Bracelet</string>
     <string name="cj_type_item2">Chain</string>
@@ -26,6 +31,12 @@
     <string name="cj_material_Emerald">Emerald</string>
     <string name="cj_material_Quarzo">Quarzo</string>
     <string name="noResults">No Results</string>
+    <string name="od_orden_detail">Orden Detail</string>
+    <string name="od_Jewel_type">Jewel Type</string>
+    <string name="od_jewel_material">Material</string>
+    <string name="od_stone">Stone</string>
+    <string name="od_Mark">Mark</string>
+    <string name="od_Price">Total Price</string>
 
     <string-array name="Menu">
         <item>@string/cj_create_jewelry</item>

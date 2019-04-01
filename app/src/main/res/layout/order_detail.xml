@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/TitleOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/od_orden_detail"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/LbTipoPrenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_Jewel_type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/TxtTipoPrendaOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/LbMaterialBaseOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_jewel_material"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/TxtMaterialBaseOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/LbStoneOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_Jewel_type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:text="@string/od_stone" />
+
+        <TextView
+            android:id="@+id/TxtStoneOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/LbMarkOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_Mark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/TxtMarkOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/LbPrecioOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_Price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/TxtTotalPriceOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/BtRemoveOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="removeOrder"
+            android:text="Remove" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -55,6 +56,14 @@ public class OrdersJewelry extends AppCompatActivity {
         ArrayAdapter<String> Adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,OrderStrings);
         LVOrders.setAdapter(Adapter);
 
+        LVOrders.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                In= new Intent(OrdersJewelry.this, OrdenDetail.class);
+                In.putExtra("position",position);
+                startActivity(In);
+            }
+        });
 
 
 
