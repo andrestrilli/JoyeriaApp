@@ -31,17 +31,18 @@ public class MainActivity extends AppCompatActivity {
         LV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                switch (position){
-//                    case 0:
-//                        In = new Intent(MainActivity.this, CreateContact.class);
-//                        startActivity(In);
-//                        break;
-//
-//                    case 1:
-//                        In = new Intent(MainActivity.this, ListContact.class);
-//                        startActivity(In);
-//                        break;
-//                }
+                switch (position){
+                    case 0:
+                        In = new Intent(MainActivity.this, CreateJewel.class);
+                        Data.Repository();
+                        startActivity(In);
+                        break;
+
+                    case 1:
+                        In = new Intent(MainActivity.this, OrdersJewelry.class);
+                        startActivity(In);
+                        break;
+                }
             }
         });
     }

@@ -8,6 +8,9 @@
     <string name="cj_choose_stone">Choose A Stone</string>
     <string name="cj_mark_jewel">Mark Jewel</string>
     <string name="cj_order">Order</string>
+    <string name="select">Select</string>
+
+    <string name="done">Added Successfully</string>
 
     <!--Item Create Jewel-->
     <string name="cj_type_item1">Bracelet</string>
@@ -22,6 +25,7 @@
     <string name="cj_material_Ruby">Ruby</string>
     <string name="cj_material_Emerald">Emerald</string>
     <string name="cj_material_Quarzo">Quarzo</string>
+    <string name="noResults">No Results</string>
 
     <string-array name="Menu">
         <item>@string/cj_create_jewelry</item>
@@ -29,21 +33,27 @@
     </string-array>
 
     <string-array name="type_jw">
+        <item>@string/select</item>
         <item>@string/cj_type_item1</item>
         <item>@string/cj_type_item2</item>
     </string-array>
 
     <string-array name="material_jw">
+        <item>@string/select</item>
         <item>@string/cj_material_Silver</item>
         <item>@string/cj_material_Steel</item>
         <item>@string/cj_material_Gold</item>
     </string-array>
 
     <string-array name="piedra_jw">
+        <item>@string/select</item>
         <item>@string/cj_material_Ruby</item>
         <item>@string/cj_material_Emerald</item>
         <item>@string/cj_material_Quarzo</item>
     </string-array>
+
+
+
 
 
     

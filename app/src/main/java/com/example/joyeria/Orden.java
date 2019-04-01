@@ -88,13 +88,13 @@ public class Orden extends AppCompatActivity {
         }
     }
 
-    public void Add(){
+    public  void Add(){
         Data.addOrden(this);
     }
-    public void Remove(){
+    public  void Remove(){
         Data.removeOrden(this);
     }
-    public void Edit(){
+    public  void Edit(){
 
     }
 

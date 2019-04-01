@@ -8,9 +8,31 @@ public class Data extends AppCompatActivity {
 
     private static ArrayList<Material> Piedras;
     private static ArrayList<Material> MaterialesBase;
-    private static ArrayList<Orden> Ordenes;
+    private static ArrayList<Orden> Ordenes= new ArrayList<Orden>();
 
     public Data() {
+       /* Piedras= new ArrayList<Material>();
+        //Creo las piedras iniciales de la APP
+        Material P1=new Material("P1","Rubi","Piedra",190000,190000);
+        Material P2=new Material("P2","Esmeralda","Piedra",180000,180000);
+        Material P3=new Material("P3","Quarzo","Piedra",150000,150000);
+        Piedras.add(P1);
+        Piedras.add(P2);
+        Piedras.add(P3);
+
+        //Creo Los Materiales Base
+        Material MB1 = new Material("MB1","Plata","MaterialBase",50000,100000);
+        Material MB2= new Material("MB2","Acero","MaterialBase",30000,50000);
+        Material MB3 = new Material("MB3","Oro","MaterialBase",90000,150000);
+        MaterialesBase.add(MB1);
+        MaterialesBase.add(MB2);
+        MaterialesBase.add(MB3);*/
+
+        Ordenes = new ArrayList<Orden>();
+
+    }
+
+    public static void Repository(){
         Piedras= new ArrayList<Material>();
         //Creo las piedras iniciales de la APP
         Material P1=new Material("P1","Rubi","Piedra",190000,190000);
@@ -28,12 +50,9 @@ public class Data extends AppCompatActivity {
         MaterialesBase.add(MB1);
         MaterialesBase.add(MB2);
         MaterialesBase.add(MB3);
-
-        Ordenes = new ArrayList<Orden>();
-
     }
 
-    public ArrayList<Material> getPiedras() {
+    public static ArrayList<Material> getPiedras() {
         return Piedras;
     }
 
@@ -41,7 +60,7 @@ public class Data extends AppCompatActivity {
         Piedras = piedras;
     }
 
-    public ArrayList<Material> getMaterialesBase() {
+    public static ArrayList<Material> getMaterialesBase() {
         return MaterialesBase;
     }
 
