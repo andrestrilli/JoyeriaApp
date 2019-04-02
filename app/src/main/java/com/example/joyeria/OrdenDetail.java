@@ -22,6 +22,7 @@ public class OrdenDetail extends AppCompatActivity {
     private TextView Stone;
     private TextView Mark;
     private TextView Price;
+    private TextView MarkedText;
 
     private int Position;
 
@@ -40,6 +41,7 @@ public class OrdenDetail extends AppCompatActivity {
         Stone = (TextView)findViewById(R.id.TxtStoneOD);
         Mark = (TextView)findViewById(R.id.TxtMarkOD);
         Price = (TextView)findViewById(R.id.TxtTotalPriceOD);
+        MarkedText=(TextView)findViewById(R.id.TxTMarkedTextOD);
 
         Orden ord = Orders.get(Position);
 
@@ -48,8 +50,11 @@ public class OrdenDetail extends AppCompatActivity {
         Stone.setText(ord.getPiedra().getNombreMaterial());
 
         if (ord.isMarcada()){
+            MarkedText.setVisibility(View.VISIBLE);
             Mark.setText(R.string.Yes);
+            MarkedText.setText(ord.getTextMark());
         }else {
+            MarkedText.setVisibility(View.INVISIBLE);
             Mark.setText("NO");
         }
 

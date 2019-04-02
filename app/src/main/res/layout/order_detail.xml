@@ -76,6 +76,19 @@
             android:gravity="center" />
 
         <TextView
+            android:id="@+id/LbMarketTxtOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/od_marked_txt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/TxTMarkedTextOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
             android:id="@+id/LbPrecioOD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

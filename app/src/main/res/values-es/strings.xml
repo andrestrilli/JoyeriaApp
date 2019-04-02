@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Joyeria</string>
+    <string name="am_see_orders">Ver Ordenes</string>
+    <string name="cj_create_jewelry">Crear Prenda</string>
+    <string name="cj_choose_material">Escoge un Material</string>
+    <string name="cj_choose_stone">Escoge una Piedra</string>
+    <string name="cj_mark_jewel">Marcar Prenda</string>
+    <string name="cj_order">Orden</string>
+    <string name="select">Seleccionar</string>
+    <string name="done">Añadido correctamente</string>
+    <string name="empty">Texto Marcado no puede estar vacio</string>
+    <string name="Yes">si</string>
+    <string name="No">no</string>
+    <string name="alert_conf_remove">Quiere Eliminar la Orden?</string>
+    <string name="Deleted">Eliminado Correctamente</string>
+    <string name="cj_type_item1">Pulsera</string>
+    <string name="cj_type_item2">Cadena</string>
+    <string name="cj_material_Silver">Plata</string>
+    <string name="cj_material_Steel">Acero</string>
+    <string name="cj_material_Gold">Oro</string>
+    <string name="cj_material_Ruby">Rubi</string>
+    <string name="cj_material_Emerald">Esmeralda</string>
+    <string name="noResults">No Hay Resultados</string>
+    <string name="od_orden_detail">Detalle de La Orden</string>
+    <string name="od_Jewel_type">Tipo de Prenda</string>
+    <string name="od_stone">Piedra</string>
+    <string name="od_Mark">Marcar</string>
+    <string name="od_Price">Precio Total</string>
+    <string name="cj_TypeText">Escriba la frase</string>
+    <string name="od_marked_txt">Texto Marcado</string>
+</resources>

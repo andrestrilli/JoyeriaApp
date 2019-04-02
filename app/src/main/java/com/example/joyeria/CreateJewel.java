@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class CreateJewel extends AppCompatActivity {
     private String [] TypeSto;
     private Resources Resources;
     private TextView Price;
+    private EditText TxtMarked;
     private int PriceMaterials = 0;
     private int PriceStones = 0;
     private int PositionPrenda = 0;
@@ -53,6 +55,8 @@ public class CreateJewel extends AppCompatActivity {
         StoneType = (Spinner)findViewById(R.id.SpSelectStong);
         Price = (TextView) findViewById(R.id.LblPrice);
         Mark = (CheckBox) findViewById(R.id.CBMarkJewel);
+        TxtMarked= (EditText)findViewById(R.id.EtTextMArked);
+        TxtMarked.setVisibility(View.INVISIBLE);
 
         Resources = this.getResources();
 
@@ -142,27 +146,17 @@ public class CreateJewel extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-               // if (Mark.isChecked()){
-                // }
+                if (Mark.isChecked()){
+
+                    TxtMarked.setVisibility(View.VISIBLE);
+
+                 }else{
+                    TxtMarked.setVisibility(View.INVISIBLE);
+                }
             }
         });
 
 
-
-
-//        public void Save(View view){
-//            String Id, NameV, LastNameV, PhoneV, CellPhoneV;
-//            Id = (contacts.size()+1)+"";
-//            NameV= Name.getText().toString();
-//            LastNameV = LastName.getText().toString();
-//            PhoneV = Phone.getText().toString();
-//            CellPhoneV = CellPhone.getText().toString();
-//
-//            Contact C = new Contact(Id,NameV,LastNameV,PhoneV,CellPhoneV);
-//            C.SaveContact();
-//            Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
-//
-//        }
     }
 
     public void save(View view){
@@ -179,9 +173,23 @@ public class CreateJewel extends AppCompatActivity {
         piedra= Stones.get(PositionStone-1);
         marcada= Mark.isChecked();
 
-        Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda);
-        ord.Add();
-        Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
+        if(TxtMarked.getText().toString().isEmpty()){
+            Toast.makeText(this,R.string.empty,Toast.LENGTH_LONG).show();
+
+        }else{
+
+        if (marcada){
+            Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,TxtMarked.getText().toString());
+            ord.Add();
+            Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
+
+        }else {
+            Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,"");
+            ord.Add();
+            Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
+
+        }
+        }
 
     }
 

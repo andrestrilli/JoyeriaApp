@@ -9,12 +9,14 @@ public class Orden extends AppCompatActivity {
     private Material Piedra;
     private String TipoPrenda;
     private boolean Marcada;
+    private String TextMark;
     private int PrecioTotal;
 
-    public Orden(Material materialBase, Material piedra, boolean marcada, String tipoPrenda) {
+    public Orden(Material materialBase, Material piedra, boolean marcada, String tipoPrenda, String txtMark) {
         MaterialBase = materialBase;
         Piedra = piedra;
         Marcada = marcada;
+        TextMark= txtMark;
         TipoPrenda = tipoPrenda;
         Id=Data.getOrdenes().size()+1;
         //tipo prenda  P = pulsera  C=Cadena
@@ -33,6 +35,14 @@ public class Orden extends AppCompatActivity {
 
     public void setId(int id) {
         Id = id;
+    }
+
+    public String getTextMark() {
+        return TextMark;
+    }
+
+    public void setTextMark(String textMark) {
+        TextMark = textMark;
     }
 
     public Material getMaterialBase() {

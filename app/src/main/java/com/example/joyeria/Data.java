@@ -86,11 +86,12 @@ public class Data extends AppCompatActivity {
                 Ordenes.remove(orden);
     }
 
-    public static void EditOrden(Orden o,int id,Material MB, Material p, boolean marc, String tP){
+    public static void EditOrden(Orden o,int id,Material MB, Material p, boolean marc, String tP,String txtMark){
         o.setId(id);
         o.setMaterialBase(MB);
         o.setPiedra(p);
         o.setTipoPrenda(tP);
+        o.setTextMark(txtMark);
         o.calcularTotal();
     }
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Joyeria</string>
-    <string name="am_titulo_joyeria">Jewelry A.P S.A.S</string>
+    <string name="am_titulo_joyeria" translatable="false">Jewelry A.P S.A.S</string>
     <string name="am_see_orders">See Orders</string>
 
     <string name="cj_create_jewelry">Create Jewelry</string>
@@ -11,6 +11,7 @@
     <string name="select">Select</string>
 
     <string name="done">Added Successfully</string>
+    <string name="empty">MarkedText Can´t be empty</string>
 
     <string name="Yes">Yes</string>
     <string name="No">No</string>
@@ -29,14 +30,16 @@
     <!--Item Stone Jewel-->
     <string name="cj_material_Ruby">Ruby</string>
     <string name="cj_material_Emerald">Emerald</string>
-    <string name="cj_material_Quarzo">Quarzo</string>
+    <string name="cj_material_Quarzo" translatable="false">Quarzo</string>
     <string name="noResults">No Results</string>
     <string name="od_orden_detail">Orden Detail</string>
     <string name="od_Jewel_type">Jewel Type</string>
-    <string name="od_jewel_material">Material</string>
+    <string name="od_jewel_material" translatable="false">Material</string>
     <string name="od_stone">Stone</string>
     <string name="od_Mark">Mark</string>
     <string name="od_Price">Total Price</string>
+    <string name="cj_TypeText">Type the phrase</string>
+    <string name="od_marked_txt">Marked Text</string>
 
     <string-array name="Menu">
         <item>@string/cj_create_jewelry</item>
