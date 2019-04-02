@@ -7,7 +7,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,65 +19,104 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
-                android:id="@+id/TVTitleCreate"
+                android:id="@+id/txtTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/logo"
                 android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/am_titulo_joyeria"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="#7386FF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:fontFamily="cursive" />
 
-            <TextView
-                android:id="@+id/TVCreate"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                android:text="@string/cj_create_jewelry" />
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/SpType"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/TVCreate"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/cj_create_jewelry"
+                    android:textColor="#607796" />
 
-            <TextView
-                android:id="@+id/TVSelectMaterial"
+                <Spinner
+                    android:id="@+id/SpType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LlhMaterial"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="15dp"
-                android:text="@string/cj_choose_material" />
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/SpSelectMaterial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/TVSelectMaterial"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/cj_choose_material"
+                    android:textColor="#607796" />
 
-            <TextView
-                android:id="@+id/TVSelectStong"
+                <Spinner
+                    android:id="@+id/SpSelectMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LlhStone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="15dp"
-                android:text="@string/cj_choose_stone" />
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/SpSelectStong"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/TVSelectStong"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/cj_choose_stone"
+                    android:textColor="#607796" />
+
+                <Spinner
+                    android:id="@+id/SpSelectStong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <CheckBox
                 android:id="@+id/CBMarkJewel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="@string/cj_mark_jewel" />
+                android:buttonTint="#7386FF"
+                android:text="@string/cj_mark_jewel"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#607796" /> />
 
             <EditText
                 android:id="@+id/EtTextMArked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#7386FF"
                 android:ems="10"
                 android:hint="@string/cj_TypeText"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="#607796"
+                android:textCursorDrawable="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/LblPrice"
@@ -83,15 +124,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="Price"
-                android:textSize="18sp" />
+                android:textColor="#607796"
+                android:textSize="22sp" />
 
             <Button
                 android:id="@+id/button"
+                style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
                 android:height="70dp"
+                android:background="#7386FF"
                 android:onClick="save"
-                android:text="@string/cj_order" />
+                android:text="@string/cj_order"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" />
 
         </LinearLayout>
     </ScrollView>

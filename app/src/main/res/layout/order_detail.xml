@@ -1,111 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/TitleOD"
+            android:id="@+id/txtTitle3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="@string/od_orden_detail"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#7386FF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="cursive" />
 
-        <TextView
-            android:id="@+id/LbTipoPrenda"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/od_Jewel_type"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/TxtTipoPrendaOD"
+            <TextView
+                android:id="@+id/LbTipoPrenda"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_Jewel_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796" />
+
+            <TextView
+                android:id="@+id/TxtTipoPrendaOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/LbMaterialBaseOD"
+            <TextView
+                android:id="@+id/LbMaterialBaseOD"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_jewel_material"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796" />
+
+            <TextView
+                android:id="@+id/TxtMaterialBaseOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/od_jewel_material"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/TxtMaterialBaseOD"
+            <TextView
+                android:id="@+id/LbStoneOD"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_Jewel_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796"
+                tools:text="@string/od_stone" />
+
+            <TextView
+                android:id="@+id/TxtStoneOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/LbStoneOD"
+            <TextView
+                android:id="@+id/LbMarkOD"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_Mark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796" />
+
+            <TextView
+                android:id="@+id/TxtMarkOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/od_Jewel_type"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            tools:text="@string/od_stone" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/TxtStoneOD"
+            <TextView
+                android:id="@+id/LbMarketTxtOD"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_marked_txt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796" />
+
+            <TextView
+                android:id="@+id/TxTMarkedTextOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/LbMarkOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/od_Mark"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            <TextView
+                android:id="@+id/LbPrecioOD"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/od_Price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#607796" />
 
-        <TextView
-            android:id="@+id/TxtMarkOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
-
-        <TextView
-            android:id="@+id/LbMarketTxtOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/od_marked_txt"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-        <TextView
-            android:id="@+id/TxTMarkedTextOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
-
-        <TextView
-            android:id="@+id/LbPrecioOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/od_Price"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-        <TextView
-            android:id="@+id/TxtTotalPriceOD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
+            <TextView
+                android:id="@+id/TxtTotalPriceOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/BtRemoveOD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:height="55dp"
+            android:background="#7386FF"
             android:onClick="removeOrder"
-            android:text="Remove" />
+            android:text="@string/Remove"
+            android:textColor="@android:color/white" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

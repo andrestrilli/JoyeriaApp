@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Joyeria</string>
-    <string name="am_titulo_joyeria" translatable="false">Jewelry A.P S.A.S</string>
+    <string name="am_titulo_joyeria" translatable="false">  Jewelry J.P S.A.S</string>
     <string name="am_see_orders">See Orders</string>
 
     <string name="cj_create_jewelry">Create Jewelry</string>
@@ -12,6 +12,9 @@
 
     <string name="done">Added Successfully</string>
     <string name="empty">MarkedText Can´t be empty</string>
+    <string name="garment">Select a garment</string>
+    <string name="material">Select a material</string>
+    <string name="stone">Select a stone</string>
 
     <string name="Yes">Yes</string>
     <string name="No">No</string>
@@ -40,6 +43,7 @@
     <string name="od_Price">Total Price</string>
     <string name="cj_TypeText">Type the phrase</string>
     <string name="od_marked_txt">Marked Text</string>
+    <string name="Remove">Remove</string>
 
     <string-array name="Menu">
         <item>@string/cj_create_jewelry</item>

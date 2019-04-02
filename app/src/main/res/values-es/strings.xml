@@ -29,4 +29,8 @@
     <string name="od_Price">Precio Total</string>
     <string name="cj_TypeText">Escriba la frase</string>
     <string name="od_marked_txt">Texto Marcado</string>
+    <string name="garment">Seleccione una prenda</string>
+    <string name="material">Seleccione un material</string>
+    <string name="stone">Seleccione una piedra</string>
+    <string name="Remove">Borrar</string>
 </resources>

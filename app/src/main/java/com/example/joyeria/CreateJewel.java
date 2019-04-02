@@ -161,34 +161,46 @@ public class CreateJewel extends AppCompatActivity {
 
     public void save(View view){
 
-        Material materialBase;
-        Material piedra;
-        boolean marcada;
-        String tipoPrenda;
-        String Id;
+        if(PositionPrenda == 0){
+            Toast.makeText(this,R.string.garment,Toast.LENGTH_LONG).show();
+        }else{
+            if (PositionBase == 0){
+                Toast.makeText(this,R.string.material,Toast.LENGTH_LONG).show();
+            }else{
+                if (PositionStone == 0){
+                    Toast.makeText(this,R.string.stone,Toast.LENGTH_LONG).show();
+                }else{
+                    Material materialBase;
+                    Material piedra;
+                    boolean marcada;
+                    String tipoPrenda;
+                    String Id;
 
-        //tipoPrenda = PositionPrenda==1?R.string.cj_type_item1+"":R.string.cj_type_item2+"";
-        tipoPrenda = PositionPrenda==1?"P":"C";
-        materialBase = Materials.get(PositionBase-1);
-        piedra= Stones.get(PositionStone-1);
-        marcada= Mark.isChecked();
+                    //tipoPrenda = PositionPrenda==1?R.string.cj_type_item1+"":R.string.cj_type_item2+"";
+                    tipoPrenda = PositionPrenda==1?"P":"C";
+                    materialBase = Materials.get(PositionBase-1);
+                    piedra= Stones.get(PositionStone-1);
+                    marcada= Mark.isChecked();
 
 
+                    if (marcada){
+                        if(TxtMarked.getText().toString().isEmpty()){
+                            Toast.makeText(this,R.string.empty,Toast.LENGTH_LONG).show();
 
-        if (marcada){
-            if(TxtMarked.getText().toString().isEmpty()){
-                Toast.makeText(this,R.string.empty,Toast.LENGTH_LONG).show();
+                        }else {
+                            Orden ord = new Orden(materialBase, piedra, marcada, tipoPrenda, TxtMarked.getText().toString());
+                            ord.Add();
+                            Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
+                        }
+                    }else {
+                        Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,"");
+                        ord.Add();
+                        Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
 
-            }else {
-                Orden ord = new Orden(materialBase, piedra, marcada, tipoPrenda, TxtMarked.getText().toString());
-                ord.Add();
-                Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
+                    }
+
+                }
             }
-        }else {
-            Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,"");
-            ord.Add();
-            Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
-
         }
 
     }

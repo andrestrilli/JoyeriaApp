@@ -12,14 +12,19 @@
         android:padding="20dp">
 
         <TextView
-            android:id="@+id/TxtTitleOrder"
+            android:id="@+id/txtTitle2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/logo"
             android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="@string/am_titulo_joyeria"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textColor="#7386FF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="cursive" />
 
         <TextView
             android:id="@+id/TxtNoResults"
