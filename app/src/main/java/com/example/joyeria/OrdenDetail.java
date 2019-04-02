@@ -23,6 +23,7 @@ public class OrdenDetail extends AppCompatActivity {
     private TextView Mark;
     private TextView Price;
     private TextView MarkedText;
+    private TextView LbMarkeText;
 
     private int Position;
 
@@ -42,6 +43,7 @@ public class OrdenDetail extends AppCompatActivity {
         Mark = (TextView)findViewById(R.id.TxtMarkOD);
         Price = (TextView)findViewById(R.id.TxtTotalPriceOD);
         MarkedText=(TextView)findViewById(R.id.TxTMarkedTextOD);
+        LbMarkeText=(TextView)findViewById(R.id.LbMarketTxtOD);
 
         Orden ord = Orders.get(Position);
 
@@ -51,10 +53,12 @@ public class OrdenDetail extends AppCompatActivity {
 
         if (ord.isMarcada()){
             MarkedText.setVisibility(View.VISIBLE);
+            LbMarkeText.setVisibility(View.VISIBLE);
             Mark.setText(R.string.Yes);
             MarkedText.setText(ord.getTextMark());
         }else {
             MarkedText.setVisibility(View.INVISIBLE);
+            LbMarkeText.setVisibility(View.INVISIBLE);
             Mark.setText("NO");
         }
 

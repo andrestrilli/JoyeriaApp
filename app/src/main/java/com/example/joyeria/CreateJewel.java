@@ -173,22 +173,22 @@ public class CreateJewel extends AppCompatActivity {
         piedra= Stones.get(PositionStone-1);
         marcada= Mark.isChecked();
 
-        if(TxtMarked.getText().toString().isEmpty()){
-            Toast.makeText(this,R.string.empty,Toast.LENGTH_LONG).show();
 
-        }else{
 
         if (marcada){
-            Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,TxtMarked.getText().toString());
-            ord.Add();
-            Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
+            if(TxtMarked.getText().toString().isEmpty()){
+                Toast.makeText(this,R.string.empty,Toast.LENGTH_LONG).show();
 
+            }else {
+                Orden ord = new Orden(materialBase, piedra, marcada, tipoPrenda, TxtMarked.getText().toString());
+                ord.Add();
+                Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
+            }
         }else {
             Orden ord = new Orden(materialBase,piedra,marcada,tipoPrenda,"");
             ord.Add();
             Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
 
-        }
         }
 
     }
